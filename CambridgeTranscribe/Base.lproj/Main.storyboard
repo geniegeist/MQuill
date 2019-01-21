@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_bld.otf">
+            <string>BrandonGrotesque-Bold</string>
+        </array>
+        <array key="Brandon_med.otf">
+            <string>BrandonGrotesque-Medium</string>
+        </array>
+        <array key="Brandon_reg.otf">
+            <string>BrandonGrotesque-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,6 +34,232 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Record Detail View Controller-->
+        <scene sceneID="l9e-pt-0SY">
+            <objects>
+                <viewController storyboardIdentifier="detailrecord" id="EyE-um-iG7" customClass="CBRecordDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BZ9-3k-brC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImU-Hq-goW">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1MV-4f-99Q"/>
+                                    <constraint firstAttribute="width" secondItem="ImU-Hq-goW" secondAttribute="height" multiplier="1:1" id="sPm-D5-lke"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="click:" destination="EyE-um-iG7" eventType="touchUpInside" id="WbT-jC-puE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to transcribe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akb-GP-l5J">
+                                <rect key="frame" x="76" y="65" width="223.5" height="49"/>
+                                <fontDescription key="fontDescription" name="BrandonGrotesque-Bold" family="Brandon Grotesque" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Akb-GP-l5J" firstAttribute="top" secondItem="DDm-DN-bkM" secondAttribute="top" constant="45" id="2ex-Qz-prE"/>
+                            <constraint firstItem="ImU-Hq-goW" firstAttribute="centerX" secondItem="BZ9-3k-brC" secondAttribute="centerX" id="H1E-Ri-aXV"/>
+                            <constraint firstItem="ImU-Hq-goW" firstAttribute="centerY" secondItem="BZ9-3k-brC" secondAttribute="centerY" id="RL1-VE-7Ff"/>
+                            <constraint firstItem="Akb-GP-l5J" firstAttribute="centerX" secondItem="DDm-DN-bkM" secondAttribute="centerX" id="ccN-k4-KrE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DDm-DN-bkM"/>
+                    </view>
+                    <connections>
+                        <outlet property="headerLabel" destination="Akb-GP-l5J" id="fHZ-LD-h68"/>
+                        <outlet property="recordButton" destination="ImU-Hq-goW" id="8Mo-2b-65c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AH0-Bo-6eT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1332" y="27"/>
+        </scene>
+        <!--Record Transcript View Controller-->
+        <scene sceneID="ZqJ-7m-eZr">
+            <objects>
+                <viewController storyboardIdentifier="recordTranscript" id="PoQ-IO-IH7" customClass="CBRecordTranscriptViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jxv-v1-UVx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="y7g-G7-MIZ">
+                                <rect key="frame" x="28" y="80" width="319" height="587"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BrandonGrotesque-Bold" family="Brandon Grotesque" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="y7g-G7-MIZ" firstAttribute="bottom" secondItem="kAn-5w-Im6" secondAttribute="bottom" id="6aZ-br-3Hr"/>
+                            <constraint firstItem="y7g-G7-MIZ" firstAttribute="centerX" secondItem="kAn-5w-Im6" secondAttribute="centerX" id="BHC-Tq-49k"/>
+                            <constraint firstItem="y7g-G7-MIZ" firstAttribute="leading" secondItem="kAn-5w-Im6" secondAttribute="leading" constant="28" id="aOS-tW-icd"/>
+                            <constraint firstItem="kAn-5w-Im6" firstAttribute="top" secondItem="y7g-G7-MIZ" secondAttribute="top" constant="-60" id="dKV-jI-dri"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kAn-5w-Im6"/>
+                    </view>
+                    <connections>
+                        <outlet property="transcriptTextview" destination="y7g-G7-MIZ" id="pIJ-Ae-H4h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ui-TV-Hjn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2041" y="27"/>
+        </scene>
+        <!--Class Collection View Controller-->
+        <scene sceneID="l6e-Gz-jGs">
+            <objects>
+                <collectionViewController storyboardIdentifier="classesVC" id="kzk-Gl-siO" customClass="CBClassCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="8uu-F7-RJ9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jan-hE-Btm">
+                            <size key="itemSize" width="175" height="239"/>
+                            <size key="headerReferenceSize" width="50" height="140"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="reuse" id="Uh4-Mx-LWn" customClass="CBClassCollectionViewCell">
+                                <rect key="frame" x="0.0" y="140" width="175" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="175" height="239"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxu-pc-QLC">
+                                            <rect key="frame" x="16" y="16" width="143" height="29"/>
+                                            <fontDescription key="fontDescription" name="BrandonGrotesque-Bold" family="Brandon Grotesque" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3S-8z-9dy">
+                                            <rect key="frame" x="16" y="201.5" width="143" height="21.5"/>
+                                            <fontDescription key="fontDescription" name="BrandonGrotesque-Regular" family="Brandon Grotesque" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="1" green="0.77647058820000003" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="cxu-pc-QLC" firstAttribute="top" secondItem="Uh4-Mx-LWn" secondAttribute="top" constant="16" id="D7i-eM-rC5"/>
+                                    <constraint firstAttribute="trailing" secondItem="a3S-8z-9dy" secondAttribute="trailing" constant="16" id="OdS-pB-5UD"/>
+                                    <constraint firstItem="cxu-pc-QLC" firstAttribute="leading" secondItem="Uh4-Mx-LWn" secondAttribute="leading" constant="16" id="ZYT-Fa-ciX"/>
+                                    <constraint firstItem="a3S-8z-9dy" firstAttribute="leading" secondItem="cxu-pc-QLC" secondAttribute="leading" id="dSh-vX-CqR"/>
+                                    <constraint firstAttribute="bottom" secondItem="a3S-8z-9dy" secondAttribute="bottom" constant="16" id="lTX-XZ-1d2"/>
+                                    <constraint firstAttribute="trailing" secondItem="cxu-pc-QLC" secondAttribute="trailing" constant="16" id="nRN-ff-Hze"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="classTitle" destination="cxu-pc-QLC" id="NcU-hq-yFH"/>
+                                    <outlet property="numberOfLectures" destination="a3S-8z-9dy" id="dCo-7H-xga"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="uT6-Ap-FtW">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Classes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wP3-hZ-Z6b">
+                                    <rect key="frame" x="112.5" y="45" width="150.5" height="49"/>
+                                    <fontDescription key="fontDescription" name="BrandonGrotesque-Bold" family="Brandon Grotesque" pointSize="34"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="wP3-hZ-Z6b" firstAttribute="top" secondItem="uT6-Ap-FtW" secondAttribute="top" constant="45" id="pdJ-4A-cag"/>
+                                <constraint firstItem="wP3-hZ-Z6b" firstAttribute="centerX" secondItem="uT6-Ap-FtW" secondAttribute="centerX" id="yRS-CD-UPk"/>
+                            </constraints>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="kzk-Gl-siO" id="FCx-xZ-Fbd"/>
+                            <outlet property="delegate" destination="kzk-Gl-siO" id="c7y-KZ-MkD"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lHl-VN-iDK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2746.4000000000001" y="19.340329835082461"/>
+        </scene>
+        <!--Lectures Collection View Controller-->
+        <scene sceneID="NzK-1n-nz1">
+            <objects>
+                <collectionViewController storyboardIdentifier="lecturesVC" id="j5B-NX-0up" customClass="CBLecturesCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="9yF-Qb-s2c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="58f-Uk-rCZ">
+                            <size key="itemSize" width="320" height="350"/>
+                            <size key="headerReferenceSize" width="50" height="104"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="reuse" id="8Hl-Sa-PjS" customClass="CBLectureCollectionViewCell">
+                                <rect key="frame" x="27.5" y="104" width="320" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1co-Gl-BKo">
+                                            <rect key="frame" x="8" y="8" width="304" height="158"/>
+                                            <fontDescription key="fontDescription" name="BrandonGrotesque-Medium" family="Brandon Grotesque" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="1co-Gl-BKo" firstAttribute="top" secondItem="8Hl-Sa-PjS" secondAttribute="top" constant="8" id="CUH-zt-SHf"/>
+                                    <constraint firstItem="1co-Gl-BKo" firstAttribute="centerX" secondItem="8Hl-Sa-PjS" secondAttribute="centerX" id="Db2-H1-2OL"/>
+                                    <constraint firstItem="1co-Gl-BKo" firstAttribute="leading" secondItem="8Hl-Sa-PjS" secondAttribute="leading" constant="8" id="W5C-Vq-aav"/>
+                                    <constraint firstItem="1co-Gl-BKo" firstAttribute="centerY" secondItem="8Hl-Sa-PjS" secondAttribute="centerY" id="lJJ-ey-4f3"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="contentLabel" destination="1co-Gl-BKo" id="Ce3-Ns-xUV"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="BGZ-Fh-mq0">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="12" verticalCompressionResistancePriority="12" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80N-Bl-Dd3">
+                                    <rect key="frame" x="0.0" y="37" width="80" height="41"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="yNn-re-sy6"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="BrandonGrotesque-Bold" family="Brandon Grotesque" pointSize="20"/>
+                                    <state key="normal" title="Close">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="dismiss:" destination="j5B-NX-0up" eventType="touchUpInside" id="Kth-lE-O4X"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="80N-Bl-Dd3" firstAttribute="top" secondItem="BGZ-Fh-mq0" secondAttribute="top" constant="37" id="5JX-A1-jYg"/>
+                                <constraint firstItem="80N-Bl-Dd3" firstAttribute="leading" secondItem="BGZ-Fh-mq0" secondAttribute="leading" id="nov-Nk-5aU"/>
+                            </constraints>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="j5B-NX-0up" id="XBT-66-Pwh"/>
+                            <outlet property="delegate" destination="j5B-NX-0up" id="ur8-yX-flN"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIm-Hf-zyh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3556" y="26.53673163418291"/>
         </scene>
     </scenes>
 </document>

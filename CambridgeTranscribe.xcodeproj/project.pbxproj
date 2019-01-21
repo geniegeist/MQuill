@@ -7,13 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2011093029A611543B852F05 /* Pods_CambridgeTranscribe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7936189370E7CBB3485B8CD9 /* Pods_CambridgeTranscribe.framework */; };
 		6F36DDDA21F38782001FE943 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F36DDD921F38782001FE943 /* AppDelegate.m */; };
 		6F36DDDD21F38782001FE943 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F36DDDC21F38782001FE943 /* ViewController.m */; };
 		6F36DDE021F38782001FE943 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F36DDDE21F38782001FE943 /* Main.storyboard */; };
 		6F36DDE221F38784001FE943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F36DDE121F38784001FE943 /* Assets.xcassets */; };
 		6F36DDE521F38784001FE943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F36DDE321F38784001FE943 /* LaunchScreen.storyboard */; };
 		6F36DDE821F38784001FE943 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F36DDE721F38784001FE943 /* main.m */; };
+		6FA1452221F3D75A00B33A29 /* MicrosoftCognitiveServicesSpeech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA1452121F3D75A00B33A29 /* MicrosoftCognitiveServicesSpeech.framework */; };
+		6FA1452321F3D99D00B33A29 /* MicrosoftCognitiveServicesSpeech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA1452121F3D75A00B33A29 /* MicrosoftCognitiveServicesSpeech.framework */; };
+		6FA1452421F3D99D00B33A29 /* MicrosoftCognitiveServicesSpeech.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA1452121F3D75A00B33A29 /* MicrosoftCognitiveServicesSpeech.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FB1C93621F48C9E004529BD /* CBLectureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB1C93521F48C9D004529BD /* CBLectureCollectionViewCell.m */; };
+		6FD8E7C321F3ECFA00363438 /* CBRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD8E7C221F3ECFA00363438 /* CBRecordViewController.m */; };
+		6FD8E7C621F3FE0000363438 /* CBRecordDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD8E7C521F3FE0000363438 /* CBRecordDetailViewController.m */; };
+		6FD8E7C921F4071900363438 /* CBRecordTranscriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD8E7C821F4071900363438 /* CBRecordTranscriptViewController.m */; };
+		6FD8E7D721F411B200363438 /* Brandon_bld_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FD8E7CD21F40D3800363438 /* Brandon_bld_it.otf */; };
+		6FD8E7D821F411B200363438 /* Brandon_bld.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FD8E7D421F40D3900363438 /* Brandon_bld.otf */; };
+		6FD8E7D921F411B200363438 /* Brandon_blk_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FD8E7CE21F40D3900363438 /* Brandon_blk_it.otf */; };
+		6FD8E7DA21F411B200363438 /* Brandon_blk.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FD8E7D121F40D3900363438 /* Brandon_blk.otf */; };
+		6FD8E7DB21F411B200363438 /* Brandon_light_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FD8E7CB21F40D3800363438 /* Brandon_light_it.otf */; };
+		6FD8E7DC21F411B200363438 /* Brandon_light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FD8E7D221F40D3900363438 /* Brandon_light.otf */; };
+		6FD8E7DD21F411B200363438 /* Brandon_med_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FD8E7D321F40D3900363438 /* Brandon_med_it.otf */; };
+		6FD8E7DE21F411B200363438 /* Brandon_med.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FD8E7CF21F40D3900363438 /* Brandon_med.otf */; };
+		6FD8E7DF21F411B200363438 /* Brandon_reg_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FD8E7D521F40D3900363438 /* Brandon_reg_it.otf */; };
+		6FD8E7E021F411B200363438 /* Brandon_reg.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FD8E7D021F40D3900363438 /* Brandon_reg.otf */; };
+		6FD8E7E121F411B200363438 /* Brandon_thin_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FD8E7CC21F40D3800363438 /* Brandon_thin_it.otf */; };
+		6FD8E7E221F411B200363438 /* Brandon_thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FD8E7D621F40D3900363438 /* Brandon_thin.otf */; };
+		6FD8E7E521F426B000363438 /* CBClassesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD8E7E421F426B000363438 /* CBClassesViewController.m */; };
+		6FD8E7F221F42C2900363438 /* CBClassCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD8E7F121F42C2900363438 /* CBClassCollectionViewController.m */; };
+		6FD8E7F521F42DD600363438 /* CBClassCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD8E7F421F42DD600363438 /* CBClassCollectionViewCell.m */; };
+		6FD8E7F821F4389600363438 /* CBLecturesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD8E7F721F4389600363438 /* CBLecturesCollectionViewController.m */; };
+		6FD8E7FB21F43BC400363438 /* CBChatbotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD8E7FA21F43BC400363438 /* CBChatbotViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6FB1398D21F39BAD002EB966 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6FA1452421F3D99D00B33A29 /* MicrosoftCognitiveServicesSpeech.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6F36DDD521F38782001FE943 /* CambridgeTranscribe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CambridgeTranscribe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +65,40 @@
 		6F36DDE421F38784001FE943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F36DDE621F38784001FE943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F36DDE721F38784001FE943 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6FA1452121F3D75A00B33A29 /* MicrosoftCognitiveServicesSpeech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MicrosoftCognitiveServicesSpeech.framework; sourceTree = "<group>"; };
+		6FB1C93421F48C9D004529BD /* CBLectureCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBLectureCollectionViewCell.h; sourceTree = "<group>"; };
+		6FB1C93521F48C9D004529BD /* CBLectureCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBLectureCollectionViewCell.m; sourceTree = "<group>"; };
+		6FD8E7C121F3ECFA00363438 /* CBRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBRecordViewController.h; sourceTree = "<group>"; };
+		6FD8E7C221F3ECFA00363438 /* CBRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBRecordViewController.m; sourceTree = "<group>"; };
+		6FD8E7C421F3FE0000363438 /* CBRecordDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBRecordDetailViewController.h; sourceTree = "<group>"; };
+		6FD8E7C521F3FE0000363438 /* CBRecordDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBRecordDetailViewController.m; sourceTree = "<group>"; };
+		6FD8E7C721F4071900363438 /* CBRecordTranscriptViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBRecordTranscriptViewController.h; sourceTree = "<group>"; };
+		6FD8E7C821F4071900363438 /* CBRecordTranscriptViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBRecordTranscriptViewController.m; sourceTree = "<group>"; };
+		6FD8E7CB21F40D3800363438 /* Brandon_light_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_light_it.otf; sourceTree = "<group>"; };
+		6FD8E7CC21F40D3800363438 /* Brandon_thin_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_thin_it.otf; sourceTree = "<group>"; };
+		6FD8E7CD21F40D3800363438 /* Brandon_bld_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_bld_it.otf; sourceTree = "<group>"; };
+		6FD8E7CE21F40D3900363438 /* Brandon_blk_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_blk_it.otf; sourceTree = "<group>"; };
+		6FD8E7CF21F40D3900363438 /* Brandon_med.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_med.otf; sourceTree = "<group>"; };
+		6FD8E7D021F40D3900363438 /* Brandon_reg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_reg.otf; sourceTree = "<group>"; };
+		6FD8E7D121F40D3900363438 /* Brandon_blk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_blk.otf; sourceTree = "<group>"; };
+		6FD8E7D221F40D3900363438 /* Brandon_light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_light.otf; sourceTree = "<group>"; };
+		6FD8E7D321F40D3900363438 /* Brandon_med_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_med_it.otf; sourceTree = "<group>"; };
+		6FD8E7D421F40D3900363438 /* Brandon_bld.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_bld.otf; sourceTree = "<group>"; };
+		6FD8E7D521F40D3900363438 /* Brandon_reg_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_reg_it.otf; sourceTree = "<group>"; };
+		6FD8E7D621F40D3900363438 /* Brandon_thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_thin.otf; sourceTree = "<group>"; };
+		6FD8E7E321F426B000363438 /* CBClassesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBClassesViewController.h; sourceTree = "<group>"; };
+		6FD8E7E421F426B000363438 /* CBClassesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBClassesViewController.m; sourceTree = "<group>"; };
+		6FD8E7F021F42C2900363438 /* CBClassCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBClassCollectionViewController.h; sourceTree = "<group>"; };
+		6FD8E7F121F42C2900363438 /* CBClassCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBClassCollectionViewController.m; sourceTree = "<group>"; };
+		6FD8E7F321F42DD600363438 /* CBClassCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBClassCollectionViewCell.h; sourceTree = "<group>"; };
+		6FD8E7F421F42DD600363438 /* CBClassCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBClassCollectionViewCell.m; sourceTree = "<group>"; };
+		6FD8E7F621F4389600363438 /* CBLecturesCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBLecturesCollectionViewController.h; sourceTree = "<group>"; };
+		6FD8E7F721F4389600363438 /* CBLecturesCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBLecturesCollectionViewController.m; sourceTree = "<group>"; };
+		6FD8E7F921F43BC400363438 /* CBChatbotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBChatbotViewController.h; sourceTree = "<group>"; };
+		6FD8E7FA21F43BC400363438 /* CBChatbotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBChatbotViewController.m; sourceTree = "<group>"; };
+		7936189370E7CBB3485B8CD9 /* Pods_CambridgeTranscribe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CambridgeTranscribe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF949BC2B7001A1609FE29F8 /* Pods-CambridgeTranscribe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CambridgeTranscribe.release.xcconfig"; path = "Pods/Target Support Files/Pods-CambridgeTranscribe/Pods-CambridgeTranscribe.release.xcconfig"; sourceTree = "<group>"; };
+		FBB58E6986C6F2B7A1D0C903 /* Pods-CambridgeTranscribe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CambridgeTranscribe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CambridgeTranscribe/Pods-CambridgeTranscribe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FA1452221F3D75A00B33A29 /* MicrosoftCognitiveServicesSpeech.framework in Frameworks */,
+				6FA1452321F3D99D00B33A29 /* MicrosoftCognitiveServicesSpeech.framework in Frameworks */,
+				2011093029A611543B852F05 /* Pods_CambridgeTranscribe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +118,11 @@
 		6F36DDCC21F38782001FE943 = {
 			isa = PBXGroup;
 			children = (
+				6FA1452121F3D75A00B33A29 /* MicrosoftCognitiveServicesSpeech.framework */,
 				6F36DDD721F38782001FE943 /* CambridgeTranscribe */,
 				6F36DDD621F38782001FE943 /* Products */,
+				84F4863DE67919E8314B5E73 /* Pods */,
+				B645C98F992FA4035331F7E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +137,7 @@
 		6F36DDD721F38782001FE943 /* CambridgeTranscribe */ = {
 			isa = PBXGroup;
 			children = (
+				6FD8E7CA21F40D1200363438 /* Fonts */,
 				6F36DDD821F38782001FE943 /* AppDelegate.h */,
 				6F36DDD921F38782001FE943 /* AppDelegate.m */,
 				6F36DDDB21F38782001FE943 /* ViewController.h */,
@@ -67,8 +147,62 @@
 				6F36DDE321F38784001FE943 /* LaunchScreen.storyboard */,
 				6F36DDE621F38784001FE943 /* Info.plist */,
 				6F36DDE721F38784001FE943 /* main.m */,
+				6FD8E7C121F3ECFA00363438 /* CBRecordViewController.h */,
+				6FD8E7C221F3ECFA00363438 /* CBRecordViewController.m */,
+				6FD8E7C421F3FE0000363438 /* CBRecordDetailViewController.h */,
+				6FD8E7C521F3FE0000363438 /* CBRecordDetailViewController.m */,
+				6FD8E7C721F4071900363438 /* CBRecordTranscriptViewController.h */,
+				6FD8E7C821F4071900363438 /* CBRecordTranscriptViewController.m */,
+				6FD8E7E321F426B000363438 /* CBClassesViewController.h */,
+				6FD8E7E421F426B000363438 /* CBClassesViewController.m */,
+				6FD8E7F021F42C2900363438 /* CBClassCollectionViewController.h */,
+				6FD8E7F121F42C2900363438 /* CBClassCollectionViewController.m */,
+				6FD8E7F321F42DD600363438 /* CBClassCollectionViewCell.h */,
+				6FD8E7F421F42DD600363438 /* CBClassCollectionViewCell.m */,
+				6FD8E7F621F4389600363438 /* CBLecturesCollectionViewController.h */,
+				6FD8E7F721F4389600363438 /* CBLecturesCollectionViewController.m */,
+				6FD8E7F921F43BC400363438 /* CBChatbotViewController.h */,
+				6FD8E7FA21F43BC400363438 /* CBChatbotViewController.m */,
+				6FB1C93421F48C9D004529BD /* CBLectureCollectionViewCell.h */,
+				6FB1C93521F48C9D004529BD /* CBLectureCollectionViewCell.m */,
 			);
 			path = CambridgeTranscribe;
+			sourceTree = "<group>";
+		};
+		6FD8E7CA21F40D1200363438 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6FD8E7CD21F40D3800363438 /* Brandon_bld_it.otf */,
+				6FD8E7D421F40D3900363438 /* Brandon_bld.otf */,
+				6FD8E7CE21F40D3900363438 /* Brandon_blk_it.otf */,
+				6FD8E7D121F40D3900363438 /* Brandon_blk.otf */,
+				6FD8E7CB21F40D3800363438 /* Brandon_light_it.otf */,
+				6FD8E7D221F40D3900363438 /* Brandon_light.otf */,
+				6FD8E7D321F40D3900363438 /* Brandon_med_it.otf */,
+				6FD8E7CF21F40D3900363438 /* Brandon_med.otf */,
+				6FD8E7D521F40D3900363438 /* Brandon_reg_it.otf */,
+				6FD8E7D021F40D3900363438 /* Brandon_reg.otf */,
+				6FD8E7CC21F40D3800363438 /* Brandon_thin_it.otf */,
+				6FD8E7D621F40D3900363438 /* Brandon_thin.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		84F4863DE67919E8314B5E73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBB58E6986C6F2B7A1D0C903 /* Pods-CambridgeTranscribe.debug.xcconfig */,
+				DF949BC2B7001A1609FE29F8 /* Pods-CambridgeTranscribe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B645C98F992FA4035331F7E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7936189370E7CBB3485B8CD9 /* Pods_CambridgeTranscribe.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +212,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F36DDEB21F38784001FE943 /* Build configuration list for PBXNativeTarget "CambridgeTranscribe" */;
 			buildPhases = (
+				C436E7999FA14D62637F3B36 /* [CP] Check Pods Manifest.lock */,
 				6F36DDD121F38782001FE943 /* Sources */,
 				6F36DDD221F38782001FE943 /* Frameworks */,
 				6F36DDD321F38782001FE943 /* Resources */,
+				28985E351C4EDBF0A250C9D3 /* [CP] Embed Pods Frameworks */,
+				8991D34F3BD403AF3F3598C2 /* [CP] Copy Pods Resources */,
+				6FB1398D21F39BAD002EB966 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -102,6 +240,7 @@
 				TargetAttributes = {
 					6F36DDD421F38782001FE943 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -128,13 +267,87 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD8E7E221F411B200363438 /* Brandon_thin.otf in Resources */,
 				6F36DDE521F38784001FE943 /* LaunchScreen.storyboard in Resources */,
 				6F36DDE221F38784001FE943 /* Assets.xcassets in Resources */,
+				6FD8E7DF21F411B200363438 /* Brandon_reg_it.otf in Resources */,
+				6FD8E7DB21F411B200363438 /* Brandon_light_it.otf in Resources */,
+				6FD8E7DA21F411B200363438 /* Brandon_blk.otf in Resources */,
+				6FD8E7E021F411B200363438 /* Brandon_reg.otf in Resources */,
+				6FD8E7E121F411B200363438 /* Brandon_thin_it.otf in Resources */,
+				6FD8E7DC21F411B200363438 /* Brandon_light.otf in Resources */,
+				6FD8E7D821F411B200363438 /* Brandon_bld.otf in Resources */,
+				6FD8E7DD21F411B200363438 /* Brandon_med_it.otf in Resources */,
+				6FD8E7D921F411B200363438 /* Brandon_blk_it.otf in Resources */,
+				6FD8E7D721F411B200363438 /* Brandon_bld_it.otf in Resources */,
+				6FD8E7DE21F411B200363438 /* Brandon_med.otf in Resources */,
 				6F36DDE021F38782001FE943 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28985E351C4EDBF0A250C9D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CambridgeTranscribe/Pods-CambridgeTranscribe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/ApiAI/ApiAI.framework",
+				"${BUILT_PRODUCTS_DIR}/FFPopup/FFPopup.framework",
+				"${BUILT_PRODUCTS_DIR}/PulsingHalo/PulsingHalo.framework",
+				"${BUILT_PRODUCTS_DIR}/Shift/Shift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ApiAI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFPopup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PulsingHalo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Shift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CambridgeTranscribe/Pods-CambridgeTranscribe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8991D34F3BD403AF3F3598C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CambridgeTranscribe/Pods-CambridgeTranscribe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C436E7999FA14D62637F3B36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CambridgeTranscribe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6F36DDD121F38782001FE943 /* Sources */ = {
@@ -143,7 +356,16 @@
 			files = (
 				6F36DDDD21F38782001FE943 /* ViewController.m in Sources */,
 				6F36DDE821F38784001FE943 /* main.m in Sources */,
+				6FD8E7FB21F43BC400363438 /* CBChatbotViewController.m in Sources */,
+				6FD8E7C921F4071900363438 /* CBRecordTranscriptViewController.m in Sources */,
+				6FD8E7E521F426B000363438 /* CBClassesViewController.m in Sources */,
+				6FD8E7F521F42DD600363438 /* CBClassCollectionViewCell.m in Sources */,
+				6FD8E7C621F3FE0000363438 /* CBRecordDetailViewController.m in Sources */,
 				6F36DDDA21F38782001FE943 /* AppDelegate.m in Sources */,
+				6FB1C93621F48C9E004529BD /* CBLectureCollectionViewCell.m in Sources */,
+				6FD8E7F221F42C2900363438 /* CBClassCollectionViewController.m in Sources */,
+				6FD8E7F821F4389600363438 /* CBLecturesCollectionViewController.m in Sources */,
+				6FD8E7C321F3ECFA00363438 /* CBRecordViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,34 +505,55 @@
 		};
 		6F36DDEC21F38784001FE943 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBB58E6986C6F2B7A1D0C903 /* Pods-CambridgeTranscribe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A4HGRGXTC4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CambridgeTranscribe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "vdn.tu-berlin.CambridgeTranscribe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CambridgeTranscribe/CambridgeTranscribe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		6F36DDED21F38784001FE943 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF949BC2B7001A1609FE29F8 /* Pods-CambridgeTranscribe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A4HGRGXTC4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CambridgeTranscribe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "vdn.tu-berlin.CambridgeTranscribe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CambridgeTranscribe/CambridgeTranscribe-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
